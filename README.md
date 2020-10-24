@@ -1,2 +1,2 @@
 # Encoder
-A system that encrypts texts/messages 
+An app that encrypts texts/messages 
