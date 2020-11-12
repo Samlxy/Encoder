@@ -1,20 +1,36 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ENCODER</title>
+    <link rel="stylesheet" href="Encoder.css">
+  </head>    
 
-<h1><strong>MESSAGE ENCODER</strong></h1>
-<div id="container">
-<label for="original-texts"><strong>Original Text:</strong></label>
-<input type="text" size=65 id="original-texts" placeholder="Type message here"</input>
+  <body>
+      <h1><strong>~MESSAGE ENCODER~</strong></h1>
+      <div id="container">
+    
+      <label for="original-texts"><strong>Original Text:</strong></label>
+      <input class="input-field" type="text" size=65 id="original-texts" placeholder="Type your message here" /> &nbsp;
+      <button id="button" onClick="secretMessage()">ENCODE</button>
 
+      <div id="guide">
+        <em><strong>First Row: </strong>Words are joined, with all white spaces and special characters removed.</em><br>
+        <em><strong>Second Row: </strong>Message is broken into equal chunks and displayed in a column.</em><br>
+        <em><strong>Third Row: </strong>Letters in the column are read from top to bottom and returned as the <strong>Encoded message</strong>.</em><br>
+        <em>samuel nwali . samuelnwali20@gmail.com . 11/11/2020</em>
+      </div>
 
-<p><span id="output"></span></p>
-<p><span id="output2"></span></p>
-<p><span id="output3"></span></p>
-<p><span id="output4"></span></p>
-  
- <button id="button" onClick="secretMessage()">ENCODE
-  </button>
+      <hr>
+    <div id='output-display'>
+      <p><span id="output"></span></p> <hr>
+      <p><span id="output2"></span></p> <hr>
+      <p><span id="output3"></span></p> 
+      </div>
+    </div>
+    </div>
+  </body>
 
-<div>
-<em><strong>Message Encrypter:</strong>
- Input message in the space provided above named <strong>"Original Text"</strong>". <br>Read text Column down, Left to Right.</em>
-  </div>
-  </div>
+  <script src="Encoder.js"></script>  
+
+</html>

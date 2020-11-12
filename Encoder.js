@@ -33,21 +33,12 @@ function secretMessage() {
 	  			}
         // displays chunked texts by column size #3
 				for (let i = 0; i < newArray.length; i++) {
-					newString += i > 0 ? ' ' : '';
+					//newString += i > 0 ? ' ' : '';
 				    	for (let j = 0; j < row; j++) {
-						const string = newArray[j] && newArray[j][i] ? newArray[j][i] : ' ';    
+						const string = newArray[j] && newArray[j][i] ? newArray[j][i] : '';    
 						newString += string;
 					}
 				}
-				
+
 				document.getElementById("output3").innerHTML = newString;
 			}
-
-      // displays chunked texts stacked #4
-      const chunkTexts = newString;
-      const stackTest = 
-      document.getElementById("output4").innerHTML = newString + '\n';
-      
-        
-			
-
