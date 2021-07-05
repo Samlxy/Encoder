@@ -1,3 +1,6 @@
+body {
+	margin: 0px;
+}
 
 h1 {
 	text-align: center;
@@ -6,19 +9,20 @@ h1 {
 
 #container {
 	background-color:  cornflowerblue;
-    height: 36em;
-    width: 55em;
+  height: 35em;
+  width: 45em;
 	margin: auto;
 	padding: 0em 5em;
 	overflow: auto;
 	overflow-wrap: break-word;
-    font-size: 1.2em;
-    text-align: center;
-    border-radius: 1em;
-    border: 2px solid black;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 1em;
+  border: 2px solid black;
 }
 
 .input-field {
+	width: 70%;
 	height: 2em;
 	font-size: 1em;
 	margin-top: 2em;
@@ -49,6 +53,47 @@ em {
    padding:20px;
 }
 
+.line {
+  background:  blue;
+  height: 0.1px;
+  border: 1px;
+}
+
 #output-display {
 	color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+	#container {
+		width: 30em;
+  }
+
+	.input-field {
+		width: 30%;
+		height: 2em;
+		font-size: 1em;
+		margin-top: 2em;
+		border-radius: 8px;
+	}
+}
+
+@media only screen and (max-width: 820px) {
+	h1 {
+		font-size: 25px;
+	}
+
+	#container {
+		width: 14em;
+		height: 28em;
+		padding: 2em;
+  }
+
+	.input-field {
+		width: 100%;
+		height: 2em;
+		font-size: 1em;
+		border-radius: 8px;
+		margin: 10px;
+		text-align: center;
+	}
 }
